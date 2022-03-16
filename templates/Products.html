@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h2>Product !! </h2>
+
+{% if  productsID == "1" %}
+
+   <div class="grid-item"> 
+        <img src="https://i.pinimg.com/564x/cd/a4/d9/cda4d98aad3926fc389a07b2a2b13909.jpg" alt="Denim Jeans" style="width:100%">
+        <h1 class="h1">chocolate</h1>
+        <p class="price">$19.99</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+{% elif productsID == "2" %}
+<div class="grid-item"> 
+    <img src="https://i.pinimg.com/564x/02/f7/86/02f78623eb21d32edb7e982ed5902196.jpg" alt="Denim Jeans" style="width:100%">
+<h1 class="h1">chocolate</h1>
+<p class="price">$19.99</p>
+<p><button>Add to Cart</button></p>
+</div>
+
+{% elif productsID == "3" %}
+<div class="grid-item">       
+    <img src="https://i.pinimg.com/564x/d4/c9/4d/d4c94d43150f62292fb37c60e11a1e35.jpg" alt="Denim Jeans" style="width:100%">
+    <h1 class="h1">chocolate</h1>
+    <p class="price">$19.99</p>
+    <p><button>Add to Cart</button></p>
+  </div> 
+{% else %}
+
+<strong style="color: red;">No Product</strong>
+
+{% endif %}
+
+
+{% endblock %}

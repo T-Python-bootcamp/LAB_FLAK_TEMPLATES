@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-size: 28px;
+}
+
+.price {
+  color: rgb(141, 141, 141);
+  font-size: 22px;
+}
+.h1 {
+  color: rgb(37, 76, 128);
+}
+ button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgba(77, 119, 175, 0.5);
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+ button:hover {
+  opacity: 0.7;
+}
+img{
+    width: 281px;
+    height: 321px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  box-shadow: 0 4px 8px 0 rgba(77, 119, 175, 0.5);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  font-size: 30px; 
+  text-align: center;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(75, 74, 74);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.li {
+  float: left;
+}
+
+.li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #2978a5;
+}
+</style>
+</head>
+<body>
+
+<ul class="ul">
+  <li class="li"><a class="active" href="/">Home</a></li>
+  <li class="li"><a href="contact">Contact</a></li>
+  <li class="li"><a href=/Products/prId>Products</a></li>
+</ul>
+
+
+<p>
+    {% block content %}
+    <div class="grid-container">
+      <div class="grid-item"> 
+        <img src="https://i.pinimg.com/564x/cd/a4/d9/cda4d98aad3926fc389a07b2a2b13909.jpg" alt="Denim Jeans" style="width:100%">
+        <h1 class="h1">chocolate</h1>
+        <p class="price">$19.99</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="grid-item"> 
+              <img src="https://i.pinimg.com/564x/02/f7/86/02f78623eb21d32edb7e982ed5902196.jpg" alt="Denim Jeans" style="width:100%">
+        <h1 class="h1">chocolate</h1>
+        <p class="price">$19.99</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="grid-item">              <img src="https://i.pinimg.com/564x/d4/c9/4d/d4c94d43150f62292fb37c60e11a1e35.jpg" alt="Denim Jeans" style="width:100%">
+        <h1 class="h1">chocolate</h1>
+        <p class="price">$19.99</p>
+        <p><button>Add to Cart</button></p>
+      </div>  
+
+  
+    </div>
+    
+
+
+    {% endblock %}
+
+</p>
+
+</body>
+</html>
+
+

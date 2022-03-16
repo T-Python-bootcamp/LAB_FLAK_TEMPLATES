@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        a {text-decoration: none; color: black;}
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: space-evenly; align-items: center; border-bottom: 1px solid;">
+        <img src="{{ url_for('static', filename='logo.png' )}}" style="width:8vh; margin-left: -10vh"/>
+        <a href="/chocoletier">Home</a>
+        <a href="/chocoletier/products">Products</a>
+        <a href="/chocoletier/contact">Contact us</a>
+
+    </div>
+
+    <p>
+        {% block content %}
+
+        <h2>Hello , this is a website for seldivng chocolate.</h2>
+        <h3>list of products:</h3>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; width: 100%;">
+            <a href="/chocolotier/productsdetails/chocolate-cakes">
+                <div 
+                style="
+                border: solid 1px #D3D3D3;
+                width:40vh;
+                height: 55vh;
+                display: flex;
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center;">
+                    <img src="{{ url_for('static', filename='chocolatecake.jpg' )}}" style="width:40vh;"/>
+                    <h3>chocolate cakes</h3>
+
+                </div>
+            </a>
+            <a href="/chocolotier/productsdetails/raw-chocolate">
+                <div style="
+                border: solid 1px #D3D3D3;
+                width:40vh;
+                height: 55vh;
+                display: flex;
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center;">
+                    <img src="{{ url_for('static', filename='rawchocolate.jpg' )}}" style="width:40vh;"/>
+
+                    <h3>raw chocolate</h3>
+                    
+                </div>
+            </a>
+            <a href="/chocolotier/productsdetails/chocolate-bites">
+                <div style="
+                border: solid 1px #D3D3D3;
+                width:40vh;
+                height: 55vh;
+                display: flex;
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center;">
+                    <img src="{{ url_for('static', filename='chocolatebites.jpg' )}}" style="width:40vh;"/>
+                    
+                    <h3>chocolate bites</h3>
+                </div>
+            </a>
+            <a href="/chocolotier/productsdetails/chocolate-powder">
+                <div style="
+                border: solid 1px #D3D3D3;
+                width:40vh;
+                height: 55vh;
+                display: flex;
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center;">
+                    <img src="{{ url_for('static', filename='chocolatepowder.jpg' )}}" style="width:40vh;"/>
+                    
+                    <h3>chocolate powder</h3>
+
+                </div>
+            </a>
+
+        </div>
+
+        {% endblock %}
+
+    </p>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% extends 'index.html' %} {% block content %} {%if name=="product1"%}
+    <div> <img src="https://i.pinimg.com/236x/2f/34/21/2f3421a2001f363c6d9767666eeb9f0b.jpg">
+
+        <h5>product1</h5>
+        {% endif %} {%if name=="product2"%}
+        <div><img src="https://i.pinimg.com/236x/3c/12/cd/3c12cdfa69e347bb8812a00a126bea04.jpg">
+
+            <h5>product2</h5>
+        </div>
+        {% endif %} {%if name=="product3"%}
+        <div><img src="https://i.pinimg.com/236x/a2/7d/94/a27d94edb97b66caa9cda04f7428d715.jpg">
+
+            <h5>product3</h5>
+        </div>{% endif %} {%if name=="product4"%}
+        <div><img src="https://i.pinimg.com/236x/f1/4f/cc/f14fcc05e20d9ba14de91e73c681f410.jpg">
+
+            <h5>product4</h5>
+        </div> {% endif %} {%if name=="product5"%}
+        <div><img src="https://i.pinimg.com/236x/90/ca/a1/90caa1f6084bc06b14955ba6a768e51e.jpg">
+
+            <h5>product5
+            </h5>
+
+        </div>{% endif %} {%if name=="product6"%}
+        <div><img src="https://i.pinimg.com/236x/1c/a6/be/1ca6be5388ab55e770a5ae8e14053c3b.jpg">
+
+            <h5>product6</h5>
+        </div>{% endif %}
+    </div>{% endblock %}
+</body>
+
+</html>

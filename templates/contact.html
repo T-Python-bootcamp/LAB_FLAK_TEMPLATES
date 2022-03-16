@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main {
+        color: cadetblue;
+        font-size: 44px;
+        margin-left: 500px;
+        margin-top: 150px;
+    }
+    
+    li {
+        margin-left: 500px;
+        color: cadetblue;
+        font-size: larger;
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    {% extends 'index.html' %} {% block content %}
+
+    <h3 id="main">You can find us here:</h3>
+    <ul>
+        <li>rafha, Saudi Arabia</li>
+        <li> by Phone: +966558740175</li>
+        <li>instagram : chocolate_22</li>
+    </ul>
+
+    {% endblock %}
+</body>
+
+</html>
